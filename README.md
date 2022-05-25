@@ -17,6 +17,10 @@ npm install
 npm start
 ```
 
+![](./public/file-metadata-main.PNG)
+
+![](./public/file-metadata-upload.PNG)
+
 ## Application features and constraints
 
 Use the multer npm package to handle file uploading.
