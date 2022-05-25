@@ -12,10 +12,11 @@ app.get('/', function (req, res) {
     res.sendFile(process.cwd() + '/views/index.html');
 });
 
-var upload = multer({ dest: "uploads/" });
+var upload = multer({ dest: process.env.ONLINE_STORAGE });  // this wold create a folder defined in dotenv
 app.post("/api/fileanalyse", upload.single("upfile"), function(req, res, next) {
   var upfile = req.file;
-  if (typeof upfile === "undefined") res.json({ error: "file not uploaded" });
+  if (typeof upfile === "undefined") 
+    res.json({ error: "file not uploaded" });
   return res.json({
     name: upfile.originalname,
     type: upfile.mimetype,
