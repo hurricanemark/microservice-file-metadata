@@ -16,7 +16,7 @@ var upload = multer({ dest: process.env.ONLINE_STORAGE });  // this wold create 
 app.post("/api/fileanalyse", upload.single("upfile"), function(req, res, next) {
   var upfile = req.file;
   if (typeof upfile === "undefined") 
-    res.json({ error: "file not uploaded" });
+    res.json({ error: "file failed to upload" });
   return res.json({
     name: upfile.originalname,
     type: upfile.mimetype,
