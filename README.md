@@ -9,7 +9,7 @@ Instructions for building your project can be found at https://www.freecodecamp.
 ## [Git source](https://github.com/hurricanemark/microservice-file-metadata.git)
 
 
-## Optionally, clone from [github]((https://github.com/hurricanemark/microservice-file-metadata.git)) and run from the terminal (regardless, you must setup and configure your own mongodb database in place of my *process.env.ONLINE_STORAGE where you define server side folder name*)!:
+Optionally, clone from [github](https://github.com/hurricanemark/microservice-file-metadata.git) and run from the terminal (regardless, you must setup and configure your own mongodb database in place of my *process.env.ONLINE_STORAGE where you define server side folder name*)!:
 
 ```
 npm install
